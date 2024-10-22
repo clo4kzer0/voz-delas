@@ -11,24 +11,16 @@
             margin: 0;
             padding: 0;
             color: #333;
+            display: flex; /* Flexbox para alinhar as partes */
         }
-        header {
+        .sidebar {
             background-color: #ff80ab; /* Rosa claro para feminilidade e acolhimento */
-            color: white;
+            width: 20%; /* Largura das laterais */
             padding: 20px;
-            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        nav {
-            margin: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
+        .content {
+            flex: 1; /* O conteúdo ocupa o espaço restante */
             margin: 20px;
             padding: 20px;
             background-color: #ffffff;
@@ -57,43 +49,56 @@
         a:hover {
             text-decoration: underline;
         }
+        .banner {
+            width: 100%;
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
-    <header>
+    <div class="sidebar">
+        <a href="https://www.gov.br/mdh/pt-br" target="_blank">
+            <img class="banner" src="https://via.placeholder.com/150x100.png?text=Banner+1" alt="Banner do Governo">
+        </a>
+        <a href="https://www.gov.br/mdh/pt-br" target="_blank">
+            <img class="banner" src="https://via.placeholder.com/150x100.png?text=Banner+2" alt="Banner do Governo">
+        </a>
+    </div>
+
+    <div class="content">
         <h1>Voz Delas - Sinais de Alerta e Como Denunciar</h1>
         <p>Estamos aqui para ajudar você a identificar e denunciar sinais de abuso.</p>
-    </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Denúncias</a>
-        <a href="#">Sinais de Alerta</a>
-        <a href="#">Contato</a>
-    </nav>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Denúncias</a>
+            <a href="#">Sinais de Alerta</a>
+            <a href="#">Contato</a>
+        </nav>
 
-    <section>
-        <h2>Como Identificar os Primeiros Sinais de Abuso</h2>
-        <p>O abuso pode começar de maneira sutil, com pequenas atitudes que muitas vezes são ignoradas. Estes sinais incluem:</p>
-        <ul>
-            <li>Isolamento da família e amigos</li>
-            <li>Controle excessivo sobre suas decisões</li>
-            <li>Críticas constantes que afetam sua autoestima</li>
-            <li>Agressividade passiva ou comportamentos possessivos</li>
-            <li>Ciúmes infundados e acusação de infidelidade</li>
-        </ul>
-        <p>Se você notar alguns desses sinais, é importante agir cedo. Muitas vezes, o abuso psicológico antecede o abuso físico. Não hesite em procurar ajuda.</p>
-    </section>
+        <section>
+            <h2>Como Identificar os Primeiros Sinais de Abuso</h2>
+            <p>O abuso pode começar de maneira sutil, com pequenas atitudes que muitas vezes são ignoradas. Estes sinais incluem:</p>
+            <ul>
+                <li>Isolamento da família e amigos</li>
+                <li>Controle excessivo sobre suas decisões</li>
+                <li>Críticas constantes que afetam sua autoestima</li>
+                <li>Agressividade passiva ou comportamentos possessivos</li>
+                <li>Ciúmes infundados e acusação de infidelidade</li>
+            </ul>
+            <p>Se você notar alguns desses sinais, é importante agir cedo. Muitas vezes, o abuso psicológico antecede o abuso físico. Não hesite em procurar ajuda.</p>
+        </section>
 
-    <section>
-        <h2>Como Denunciar</h2>
-        <p>Se você ou alguém que você conhece está em situação de risco, entre em contato com as autoridades. Abaixo estão algumas formas de denunciar:</p>
-        <ul>
-            <li><strong>Ligue para 180:</strong> Central de Atendimento à Mulher</li>
-            <li><strong>Visite:</strong> <a href="https://www.gov.br/mdh/pt-br">Site do Ministério da Mulher, Família e Direitos Humanos</a></li>
-        </ul>
-        <p>Você não está sozinha. Existem recursos disponíveis para oferecer apoio e segurança.</p>
-    </section>
+        <section>
+            <h2>Como Denunciar</h2>
+            <p>Se você ou alguém que você conhece está em situação de risco, entre em contato com as autoridades. Abaixo estão algumas formas de denunciar:</p>
+            <ul>
+                <li><strong>Ligue para 180:</strong> Central de Atendimento à Mulher</li>
+                <li><strong>Visite:</strong> <a href="https://www.gov.br/mdh/pt-br">Site do Ministério da Mulher, Família e Direitos Humanos</a></li>
+            </ul>
+            <p>Você não está sozinha. Existem recursos disponíveis para oferecer apoio e segurança.</p>
+        </section>
+    </div>
 
     <footer>
         &copy; 2024 Voz Delas | Todos os direitos reservados
